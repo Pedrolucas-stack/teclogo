@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsividade.css">
+    <title>Plataforma Tec Logo</title>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwgfZ179M4R7dks4CbpvPghcs-up69aD4&callback=console.debug&libraries=maps,marker&v=beta">
+        </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#" class="logo">T<span>ec</span> L<span>og</span>o</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#"
+                        onclick="event.preventDefault(); document.querySelector('#inicio').scrollIntoView({ behavior: 'smooth' });">Início</a>
+                </li>
+                <li class="nav-item"><a href="#"
+                        onclick="event.preventDefault(); document.querySelector('#sobre_nos').scrollIntoView({ behavior: 'smooth' });">Sobre
+                        Nós</a></li>
+                <li class="nav-item"><a href="#"
+                        onclick="event.preventDefault(); document.querySelector('#feedback').scrollIntoView({ behavior: 'smooth' });">Feedback</a>
+                </li>
+                <li class="nav-item"><a href="./rastreamento.html">Rastreamento</a></li>
+                <li class="nav-item"><a href="./lojista.html">Área do lojista</a></li>
+                <li class="nav-item"><a href="#"
+                        onclick="event.preventDefault(); document.querySelector('#contato').scrollIntoView({ behavior: 'smooth' });">Contatos</a>
+                </li>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="chatButton" onclick="toggleChat()">
+            <img src="./img/bate-papo.png" alt="Abrir/Fechar Chat" style="width: 65px; height: 65px;">
+        </div>
+
+        <!-- Container para o iframe -->
+        <div id="chatContainer">
+            <!-- Embed do iframe -->
+            <iframe width="350" height="400" allow="microphone;"
+                src="https://console.dialogflow.com/api-client/demo/embedded/cd326f8d-e598-4b2a-ae57-36ff0dedb68e"></iframe>
+        </div>
+
+        <section id="inicio">
+            <div class="inicio-text">
+                <h4 class="text-h4">Bem vindo ao Tec Logo</h4>
+                <h1 class="text-h1">Conectando Distâncias, Entregando Confiança. </h1>
+                <p>Distribuição eficiente para pequenas empresas. Simplifique suas compras e tenha controle total das
+                    entregas.</p>
+                <a href="#"
+                    onclick="event.preventDefault(); document.querySelector('#contato').scrollIntoView({ behavior: 'smooth' });"
+                    class="inicio-btn">Entre em contato conosco</a>
+            </div>
+            <div class="inicio-img">
+                <img src="./img/logistica.jpg">
+            </div>
+        </section>
+        <section id="sobre_nos">
+            <div class="sobre-text">
+                <h4 class="text-h4">Sobre Nós</h4>
+                <h1 class="text-h1">Transparência em primeiro lugar!</h1>
+                <p>Somos uma plataforma inovadora que une inteligência e logística para enfrentar desafios e impulsionar
+                    o sucesso. Nossa missão é transformar obstáculos logísticos em oportunidades de crescimento,
+                    destacando-nos como líderes na convergência de tecnologia e logística. Comprometidos com a inovação,
+                    investimos em pesquisa para oferecer soluções que antecipem necessidades futuras. Com uma equipe
+                    especializada e foco na eficiência operacional, proporcionamos soluções personalizadas que se
+                    adaptam dinamicamente ao mercado em constante evolução. Junte-se a nós na jornada para redefinir o
+                    futuro da logística, onde a inteligência guia cada movimento em direção ao sucesso garantido.</p>
+            </div>
+        </section>
+        <section id="feedback">
+            <div class="feedback-text">
+                <h1 class="text-h1">Feedback dos clientes</h1>
+                <h4 class="text-h4">"Nunca mais tive problemas com entregas. Com a TecLogo, tenho total controle e
+                    transparência em minhas todas as minhas encomendas!" -Mark Zuckerberg</h4>
+                <p>Nossa maior garantia é o compromisso e transparência com o cliente !</p>
+                <a href="./lojista.html" class="inicio-btn">Cadastre-se agora!</a>
+            </div>
+
+            <img src="./img/zuckerberg.png" class="feedback-img">
+
+        </section>
+        <section id="contato">
+            <div class="contato-text">
+                <h4 class="text-h4">Procurando serviços de logística?</h4>
+                <h1 class="text-h1">Nossos Contatos</h1>
+                <li>Telefone: (16)4002-8922</li>
+                <li>E-mail: teclogosolutions8@gmail.com</li>
+                <li>Endereço: Av. Cavalheiro Paschoal Innecchi, 500, Ribeirão Preto - SP</li>
+            </div>
+            <gmp-map center="-21.165481567382812,-47.786197662353516" zoom="16" map-id="DEMO_MAP_ID">
+                <gmp-advanced-marker position="-21.165481567382812,-47.786197662353516" title="My location">
+                </gmp-advanced-marker>
+            </gmp-map>
+        </section>
+        <footer>
+            <p>Copyright © 2023. Todos os direitos reservados</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

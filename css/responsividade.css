@@ -1,0 +1,148 @@
+@media (max-width:785px) {
+
+    /* menu-navegação */
+    .navigation {
+        padding: 18px 20px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu.ativo .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu.ativo .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: var(--white);
+        transition: 0.3s;
+    }
+
+    .nav-menu.ativo {
+        right: 0;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    /*início*/
+    #inicio {
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: start;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    #inicio .text-h4 {
+        font-size: 1.6rem;
+    }
+
+    #inicio .text-h1 {
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+
+    #inicio p {
+        font-size: 1.1rem;
+
+    }
+
+    .inicio-img img {
+        width: 16.5rem;
+        height: 16.5rem;
+    }
+
+    /* Sobre nós */
+    #sobre_nos {
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: start;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    #sobre_nos .text-h4 {
+        font-size: 1.6rem;
+    }
+
+    #sobre_nos .text-h1 {
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+
+    #sobre_nos p {
+        font-size: 1.1rem;
+    }
+
+
+    /* feedback */
+    #feedback {
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: start;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    #feedback .text-h4 {
+        font-size: 1.6rem;
+
+    }
+
+    #feedback .text-h1 {
+        font-size: 1.8rem;
+        line-height: 3rem;
+
+    }
+
+    #feedback p {
+        font-size: 1.1rem;
+    }
+
+    .feedback-img {
+        width: 20rem;
+    }
+
+    /* contatos */
+
+    #contato {
+        margin-top:180px;
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: start;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    #contato .text-h4 {
+        font-size: 1.6rem;
+
+    }
+
+    #contato .text-h1 {
+        font-size: 1.8rem;
+        line-height: 3rem;
+
+    }
+
+    #contato p {
+        font-size: 1.1rem;
+    }
+
+}
